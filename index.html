@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+
+    <div class="password-display">
+      <input type="text" id="password" value="PTx1f5DaFX" readonly>
+      <button id="copy-button" class="tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 16 16">
+        <path fill="white" d="M13.49 3L10.74.37A1.22 1.22 0 0 0 9.86 0h-4a1.25 1.25 0 0 0-1.22 1.25v11a1.25 1.25 0 0 0 1.25 1.25h6.72a1.25 1.25 0 0 0 1.25-1.25V3.88a1.22 1.22 0 0 0-.37-.88m-.88 9.25H5.89v-11h2.72v2.63a1.25 1.25 0 0 0 1.25 1.25h2.75zm0-8.37H9.86V1.25z"/>
+        <path fill="white" d="M10.11 14.75H3.39v-11H4V2.5h-.61a1.25 1.25 0 0 0-1.25 1.25v11A1.25 1.25 0 0 0 3.39 16h6.72a1.25 1.25 0 0 0 1.25-1.25v-.63h-1.25z"/></svg>
+        <span class="tooltiptext">Copy to clipboard</span>
+      </button>    
+    </div>
+
+    <div class="settings">
+      <div class="setting">
+        <label for="length">Character Length</label>
+        <input type="range" id="length" min="4" max="16" value="10">
+        <span id="length-value">10</span>
+      </div>
+
+      <div class="setting">
+        <input type="checkbox" id="uppercase" checked>
+        <label for="uppercase">Include Uppercase Letters</label>
+      </div>
+
+      <div class="setting">
+        <input type="checkbox" id="lowercase" checked>
+        <label for="lowercase">Include Lowercase Letters</label>
+      </div>
+
+      <div class="setting">
+        <input type="checkbox" id="numbers" checked>
+        <label for="numbers">Include Numbers</label>
+      </div>
+
+      <div class="setting">
+        <input type="checkbox" id="symbols">
+        <label for="symbols">Include Symbols</label>
+      </div>
+
+      <div class="strength">
+        <label for="strength">Strength</label>
+        <div id="strength">Medium</div>
+      </div>
+
+      <button id="generate-button">Generate</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

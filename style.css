@@ -1,0 +1,116 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+  }
+  
+  .container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .password-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .password-display input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  #copy-button {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .settings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .strength {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .setting label {
+    margin-right: 10px;
+  }
+  
+  #length {
+    width: 100%;
+  }
+  
+  #generate-button {
+    background-color: #00bcd4;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .setting input {
+    cursor: pointer;
+  }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; 
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
